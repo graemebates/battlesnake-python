@@ -34,7 +34,7 @@ x=0
 @bottle.post('/move')
 def move():
     data = bottle.request.json
-    # TODO: Do things with data
+    #  TODO: Do things with data
     # if(x == 1):
     #     x = 0
     #     return {
@@ -48,7 +48,8 @@ def move():
     #         'taunt': 'battlesnake-python!'
     #     }
     # if (turtle):
-
+    print "data = bottle.request.json"
+    print data
     return {
      'move': 'east',
      'taunt': data.game
