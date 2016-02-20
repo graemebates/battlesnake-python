@@ -35,19 +35,22 @@ x=0
 def move():
     data = bottle.request.json
     # TODO: Do things with data
-    if(x == 1):
-        x = 0
-        return {
-            'move': 'north',
-            'taunt': 'battlesnake-python!'
-        }
-    if x==0:
-        x=1
-        return {
-            'move': 'west',
-            'taunt': 'battlesnake-python!'
-        }
-
+    # if(x == 1):
+    #     x = 0
+    #     return {
+    #         'move': 'north',
+    #         'taunt': 'battlesnake-python!'
+    #     }
+    # if x==0:
+    #     x=1
+    #     return {
+    #         'move': 'west',
+    #         'taunt': 'battlesnake-python!'
+    #     }
+    return {
+     'move': 'east',
+     'taunt': 'battlesnake-python!'
+          }
 
 @bottle.post('/end')
 def end():
