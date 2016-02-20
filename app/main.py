@@ -51,7 +51,7 @@ def move():
 
     return {
      'move': 'east',
-     'taunt': data[game]
+     'taunt': data.game
           }
 
 @bottle.post('/end')
