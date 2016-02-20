@@ -47,10 +47,11 @@ def move():
     #         'move': 'west',
     #         'taunt': 'battlesnake-python!'
     #     }
-    print data
+    # if (turtle):
+
     return {
      'move': 'east',
-     'taunt': 'battlesnake-python!'
+     'taunt': data[game]
           }
 
 @bottle.post('/end')
