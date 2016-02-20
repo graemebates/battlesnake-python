@@ -27,20 +27,26 @@ def start():
     # TODO: Do things with data
 
     return {
-        'taunt': 'battlesnake-python!'
+        'taunt': 'aha asuh dude'
     }
 
-
+x=0
 @bottle.post('/move')
 def move():
     data = bottle.request.json
-
     # TODO: Do things with data
-
-    return {
-        'move': 'north',
-        'taunt': 'battlesnake-python!'
-    }
+    if(x == 1):
+        x = 0
+        return {
+            'move': 'north',
+            'taunt': 'battlesnake-python!'
+        }
+    if x==0:
+        x=1
+        return {
+            'move': 'west',
+            'taunt': 'battlesnake-python!'
+        }
 
 
 @bottle.post('/end')
