@@ -47,6 +47,7 @@ def move():
     #         'move': 'west',
     #         'taunt': 'battlesnake-python!'
     #     }
+    print data
     return {
      'move': 'east',
      'taunt': 'battlesnake-python!'
